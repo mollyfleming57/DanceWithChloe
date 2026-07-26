@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #F5F5F0; /* off-white, easier on eyes than pure white */
-  color: #2B2B2B; /* charcoal instead of pure black for body text */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #FAFAF7; /* softer than F5F5F0, almost white but warm */
+  color: #3A3A3A; /* softened from harsh charcoal */
+  line-height: 1.6; /* more breathing room between lines of text */
 }
 
 /* ---- NAV BAR ---- */
@@ -15,55 +16,58 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #000;
+  background-color: #1A1A1A; /* soft black instead of pure #000 */
   color: #fff;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid #D4AF37; /* gold accent line */
+  padding: 1.2rem 2.5rem;
+  border-bottom: 1px solid #D4AF37; /* thinner gold line, less bold */
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600; /* slightly less heavy than bold */
+  font-size: 1.3rem;
   color: #fff;
+  letter-spacing: 0.5px;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-links a {
-  color: #fff;
+  color: #E8E8E8; /* soft white instead of pure white */
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #D4AF37; /* gold on hover */
+  color: #D4AF37;
 }
 
 .btn-signup {
-  background-color: #C8102E; /* bright red */
+  background-color: #B91C3C; /* softer, slightly muted red */
   color: #fff;
-  padding: 0.6rem 1.2rem;
+  padding: 0.65rem 1.4rem;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  border: 1px solid #D4AF37; /* thin gold border */
-  transition: background-color 0.2s ease;
+  font-weight: 600;
+  border-radius: 6px; /* more rounded = softer feel */
+  border: none; /* removed harsh gold border */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-signup:hover {
-  background-color: #4A0E0E; /* deep maroon on hover */
+  background-color: #7A1226;
+  transform: translateY(-1px); /* subtle lift on hover */
 }
 
 /* ---- HERO SECTION ---- */
 .hero {
-  height: 80vh;
+  height: 75vh;
   background-image: url("images/dance-photo.jpg");
   background-size: cover;
   background-position: center;
@@ -78,14 +82,66 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(20, 20, 20, 0.55); /* softer overlay, less black */
 }
 
 .hero-overlay {
   position: relative;
   z-index: 1;
   color: #fff;
+  max-width: 700px;
+  padding: 0 1.5rem;
 }
 
 .hero-overlay h1 {
-  font-size: 3.5rem;}
+  font-size: 3rem; /* slightly smaller, less overwhelming */
+  font-weight: 700;
+  text-transform: none; /* removed all-caps for a gentler feel */
+  margin-bottom: 1rem;
+  color: #fff; /* white reads softer than bright red on a photo */
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  font-weight: 300; /* lighter weight = softer */
+  margin-bottom: 2rem;
+  color: #F0F0F0;
+}
+
+.btn-cta {
+  background-color: #B91C3C;
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+  background-color: #7A1226;
+  transform: translateY(-1px);
+}
+
+/* ---- MAIN CONTENT BELOW HERO ---- */
+main {
+  padding: 4rem 2.5rem;
+  max-width: 900px;
+  margin: 0 auto; /* centers content, less edge-to-edge harsh */
+}
+
+main h2 {
+  color: #B91C3C;
+  font-weight: 600;
+  border-bottom: none; /* removed harsh underline */
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+main p {
+  color: #4A4A4A;
+  font-size: 1.05rem;
+}
