@@ -205,17 +205,14 @@ main p {
    ========================================== */
 @media (max-width: 768px) {
 
-  /* Stack the About section image below text */
   .dwc-section {
     flex-direction: column;
   }
 
-  /* Show more of the left side of the hero photo */
   .hero {
     background-position: left center;
   }
 
-  /* Hide the regular nav links + button, show hamburger instead */
   .nav-links,
   .btn-signup {
     display: none;
@@ -225,7 +222,6 @@ main p {
     display: flex;
   }
 
-  /* When menu is open, show links stacked in a dropdown */
   .nav-links.active {
     display: flex;
     flex-direction: column;
@@ -238,13 +234,11 @@ main p {
     gap: 1.5rem;
     text-align: center;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    z-index: 100;
   }
 
   .btn-signup.active {
     display: inline-block;
-    position: absolute;
-    top: calc(100% + 220px); /* pushes below the stacked links, adjust if needed */
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 0.5rem;
   }
 }
