@@ -155,3 +155,34 @@ main p {
   color: #4A4A4A;
   font-size: 1.05rem;
 }
+
+/* ---- What Is Dance With Chloe? SECTION ---- */
+.dwc-section {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.dwc-text {
+  flex: 1.3; /* text takes up slightly more space than image */
+}
+
+.dwc-image {
+  flex: 1;
+}
+
+.dwc-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 4px solid #D4AF37; /* gold border */
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* soft shadow for depth */
+}
+
+/* Stack on smaller screens instead of squishing side by side */
+@media (max-width: 768px) {
+  .dwc-section {
+    flex-direction: column;
+  }
+}
