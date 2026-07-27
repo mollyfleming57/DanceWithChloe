@@ -1,8 +1,10 @@
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const navLinks = document.getElementById('navLinks');
-const signupBtn = document.getElementById('signupBtn');
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  const signupBtn = document.getElementById('signupBtn');
 
-hamburgerBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  signupBtn.classList.toggle('active');
+  hamburgerBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    signupBtn.classList.toggle('active');
+  });
 });
