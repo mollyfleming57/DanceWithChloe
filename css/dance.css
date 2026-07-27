@@ -160,7 +160,7 @@ main p {
 .dwc-section {
   display: flex;
   gap: 3rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .dwc-text {
