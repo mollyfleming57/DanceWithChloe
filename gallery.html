@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset='utf-8'>
+  <meta name='author' content='Molly Fleming'>
+  <meta name='description' content='Dance with Chloe'>
+  <title>Gallery | Dance With Chloe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dance.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">Dance With Chloe</div>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">Meet Chloe Ray</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="signup.html" class="btn-signup" id="signupBtn">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Gallery</h1>
+    <p class="page-subtitle">Moments of passion, power, and progress</p>
+  </header>
+
+  <main>
+    <section class="gallery-section">
+      <div class="gallery-grid">
+
+        <!-- Photos -->
+        <img src="images/gallery-1.jpeg" alt="Dance With Chloe photo 1" class="gallery-item gallery-img">
+        <img src="images/gallery-2.jpeg" alt="Dance With Chloe photo 2" class="gallery-item gallery-img">
+        <img src="images/gallery-3.jpeg" alt="Dance With Chloe photo 3" class="gallery-item gallery-img">
+        <img src="images/gallery-4.jpeg" alt="Dance With Chloe photo 4" class="gallery-item gallery-img">
+
+        <!-- Videos -->
+        <video src="videos/gallery-video-1.mp4" class="gallery-item gallery-video" muted playsinline></video>
+        <video src="videos/gallery-video-2.mp4" class="gallery-item gallery-video" muted playsinline></video>
+
+        <!-- Add more img or video tags here, following the same pattern, for every file you want in the gallery -->
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox popup (hidden until a photo/video is clicked) -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img src="" alt="" id="lightboxImg" class="lightbox-img">
+    <video src="" id="lightboxVideo" class="lightbox-img" controls></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
