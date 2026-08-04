@@ -360,3 +360,61 @@ main p {
     flex-direction: column;
   }
 }
+
+/* ---- SIGNUP FORM ---- */
+.form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.signup-form label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #3A3A3A;
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #3A3A3A;
+}
+
+.signup-form input:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+  outline: none;
+  border-color: #B91C3C;
+}
+
+.fine-print {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.hidden-field {
+  display: none;
+}
+
+.submit-btn {
+  margin-top: 2rem;
+  align-self: center;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset='utf-8'>
+  <meta name='author' content='Molly Fleming'>
+  <meta name='description' content='Dance with Chloe'>
+  <title>Sign Up | Dance With Chloe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dance.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">Dance With Chloe</div>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">Meet Chloe Ray</a></li>
+      <li><a href="signup.html" class="btn-signup" id="signupBtn">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Request Information</h1>
+    <p class="page-subtitle">Tell us a bit about what you're looking for</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="signup-form">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="Phone Number" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="request">Request Information (please specify)</label>
+        <textarea id="request" name="Request Details" rows="4" required></textarea>
+
+        <label for="bookDance">Would you like to book a dance?</label>
+        <select id="bookDance" name="Book a Dance" required>
+          <option value="">-- Select --</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+        <div id="dayRequestGroup" class="hidden-field">
+          <label for="requestedDay">Preferred Day</label>
+          <input type="date" id="requestedDay" name="Requested Day">
+          <p class="fine-print">
+            Please note: requested days are not guaranteed and are subject to approval or denial by Chloe based on availability.
+          </p>
+        </div>
+
+        <button type="submit" class="btn-cta submit-btn">Submit Request</button>
+
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
